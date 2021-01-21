@@ -1,0 +1,19 @@
+{
+  "name": "angular-element-microfrontend-poc",
+  "version": "1.0.0",
+  "description": "Runner for starting the microfrontend environment",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --names \"child ,parent\" \"mfserve --listen 3001 child-app-a/dist/child-app-a\" \"cd parent-shell && npm start\"",
+    "start-prod": "concurrently --names \"child ,parent\" \"mfserve --listen 3001 child-app-a/dist/child-app-a\" \"mfserve --listen 3000 parent-shell/dist/parent-shell\"",
+    "start-child": "mfserve --listen 3001 child-app-a/dist/child-app-a"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@microfrontends/serve": "^11.3.0",
+    "concurrently": "^5.3.0",
+    "opener": "^1.5.2",
+    "wait-on": "^5.2.0"
+  }
+}

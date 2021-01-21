@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/angular-element-microfrontend-poc.iml" filepath="$PROJECT_DIR$/.idea/angular-element-microfrontend-poc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/child-app-a/child-app-a.iml" filepath="$PROJECT_DIR$/child-app-a/child-app-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-shell/parent-shell.iml" filepath="$PROJECT_DIR$/parent-shell/parent-shell.iml" />
+    </modules>
+  </component>
+</project>
